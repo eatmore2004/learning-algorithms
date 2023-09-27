@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+*~
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
 
-# Precompiled Headers
-*.gch
-*.pch
+/bin/
+/build/
+/lib/
+/out/
+debug/
+release/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Makefile
+cmake-build-debug/
+CMakeLists.txt.user
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+.vscode/
+.idea/
+.project
+.cproject
 
-# Executables
-*.exe
-*.out
-*.app
+/vendor/
+
+secrets.conf
+
+*.log
