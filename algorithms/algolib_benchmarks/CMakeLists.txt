@@ -1,0 +1,8 @@
+project(algolib_benchmarks)
+
+add_subdirectory(lib)
+
+add_executable(algolib_benchmarks_run algolib_benchmark.cpp)
+
+target_link_libraries(algolib_benchmarks_run algolib_lib)
+target_link_libraries(algolib_benchmarks_run benchmark::benchmark)

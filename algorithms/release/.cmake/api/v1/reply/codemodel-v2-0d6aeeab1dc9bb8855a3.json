@@ -1,0 +1,763 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "algolib",
+					"jsonFile" : "directory-algolib-Release-8aeff654250e8cf6562a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "algolib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "algolib_tests",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_tests-Release-0a64dc0690a96602996e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "algolib_tests",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "algolib_tests/lib",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_tests.lib-Release-9cc9433334fba911c574.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "algolib_tests/lib"
+				},
+				{
+					"build" : "algolib_tests/lib/googlemock",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_tests.lib.googlemock-Release-26723bd47577db506b29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "algolib_tests/lib/googlemock",
+					"targetIndexes" : 
+					[
+						23,
+						24
+					]
+				},
+				{
+					"build" : "algolib_tests/lib/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_tests.lib.googletest-Release-1b1c92d73e79e4a74f15.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 5,
+					"source" : "algolib_tests/lib/googletest",
+					"targetIndexes" : 
+					[
+						25,
+						26
+					]
+				},
+				{
+					"build" : "algolib_benchmarks",
+					"childIndexes" : 
+					[
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_benchmarks-Release-9281b5e63719cbb88307.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "algolib_benchmarks",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "algolib_benchmarks/lib",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_benchmarks.lib-Release-7a365c12508bef33b66c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 7,
+					"source" : "algolib_benchmarks/lib"
+				},
+				{
+					"build" : "algolib_benchmarks/lib/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-algolib_benchmarks.lib.src-Release-529f6530633211cd43eb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 7,
+					"source" : "algolib_benchmarks/lib/src",
+					"targetIndexes" : 
+					[
+						6,
+						8
+					]
+				},
+				{
+					"build" : "algolib_benchmarks/lib/test",
+					"jsonFile" : "directory-algolib_benchmarks.lib.test-Release-d7c39d61a74aaeb988e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 7,
+					"source" : "algolib_benchmarks/lib/test",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						7,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "algorithms",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "algolib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "algolib_tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 2
+				},
+				{
+					"childIndexes" : 
+					[
+						5
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gmock",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						23,
+						24
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gtest",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						25,
+						26
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						7
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "algolib_benchmarks",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"name" : "benchmark",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "algolib_benchmarks_run::@22d84810ba551b44c88b",
+					"jsonFile" : "target-algolib_benchmarks_run-Release-bffc74bf3ebb1bb426bb.json",
+					"name" : "algolib_benchmarks_run",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "algolib_lib::@2fa0c8e86d9b8fa56b7c",
+					"jsonFile" : "target-algolib_lib-Release-ecbe3ebb17430fbb21b1.json",
+					"name" : "algolib_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "algolib_tests_run::@7a61a9e8bbf589321e93",
+					"jsonFile" : "target-algolib_tests_run-Release-7864c7dbc7010c5b5d93.json",
+					"name" : "algolib_tests_run",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "algorithms_run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-algorithms_run-Release-14d9395da8bebbe5f5e7.json",
+					"name" : "algorithms_run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "args_product_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-args_product_test-Release-9510247ce96876d0f400.json",
+					"name" : "args_product_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "basic_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-basic_test-Release-9a7fd454fc36f48541ef.json",
+					"name" : "basic_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "benchmark::@c3c14c94846c39a34a51",
+					"jsonFile" : "target-benchmark-Release-9a386702bc90a1220422.json",
+					"name" : "benchmark",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_gtest-Release-4115b7f5fc66bcda2c9d.json",
+					"name" : "benchmark_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "benchmark_main::@c3c14c94846c39a34a51",
+					"jsonFile" : "target-benchmark_main-Release-6139cab2555980007ebf.json",
+					"name" : "benchmark_main",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_min_time_flag_iters_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_min_time_flag_iters_test-Release-d17617fc7f01c9a9cd03.json",
+					"name" : "benchmark_min_time_flag_iters_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_min_time_flag_time_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_min_time_flag_time_test-Release-f67df5dab8c319233346.json",
+					"name" : "benchmark_min_time_flag_time_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_name_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_name_gtest-Release-56cc264105d2e9d9f687.json",
+					"name" : "benchmark_name_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_random_interleaving_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_random_interleaving_gtest-Release-499cfa9451b6c33e94f7.json",
+					"name" : "benchmark_random_interleaving_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_setup_teardown_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_setup_teardown_test-Release-836a04e7bf58319bf159.json",
+					"name" : "benchmark_setup_teardown_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-benchmark_test-Release-f7c79e2b843238032186.json",
+					"name" : "benchmark_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "commandlineflags_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-commandlineflags_gtest-Release-fc191521d5537cc6103e.json",
+					"name" : "commandlineflags_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "complexity_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-complexity_test-Release-56d57f57b976ae19885d.json",
+					"name" : "complexity_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "cxx03_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-cxx03_test-Release-9d702e24bfb76fdd3d3b.json",
+					"name" : "cxx03_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "diagnostics_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-diagnostics_test-Release-3a78dbbe068f302d6bdf.json",
+					"name" : "diagnostics_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "display_aggregates_only_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-display_aggregates_only_test-Release-e02e1bfc61494b1906ab.json",
+					"name" : "display_aggregates_only_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "donotoptimize_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-donotoptimize_test-Release-bcc43c929464ff8aa87b.json",
+					"name" : "donotoptimize_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "filter_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-filter_test-Release-2e52b36b0645e8f3d640.json",
+					"name" : "filter_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fixture_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-fixture_test-Release-7a355a2ac12adf8c5d0a.json",
+					"name" : "fixture_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock::@0fbd567589d23263fc99",
+					"jsonFile" : "target-gmock-Release-7721ec379ba24ac92eef.json",
+					"name" : "gmock",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock_main::@0fbd567589d23263fc99",
+					"jsonFile" : "target-gmock_main-Release-f754c97fe0007515ff9e.json",
+					"name" : "gmock_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest::@15d9ae91a40138cb1d1a",
+					"jsonFile" : "target-gtest-Release-821b9a798f40e95f1dc1.json",
+					"name" : "gtest",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest_main::@15d9ae91a40138cb1d1a",
+					"jsonFile" : "target-gtest_main-Release-8c059715ae167198bb03.json",
+					"name" : "gtest_main",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "internal_threading_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-internal_threading_test-Release-0c8ff109ca492ebeac8b.json",
+					"name" : "internal_threading_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "link_main_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-link_main_test-Release-918ad95f2bbd83505a92.json",
+					"name" : "link_main_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "map_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-map_test-Release-fd573587244a51e69660.json",
+					"name" : "map_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "memory_manager_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-memory_manager_test-Release-d89a77e437340cbb2a04.json",
+					"name" : "memory_manager_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "min_time_parse_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-min_time_parse_gtest-Release-470f792c21e596f6759c.json",
+					"name" : "min_time_parse_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "multiple_ranges_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-multiple_ranges_test-Release-9c0a3d7f735b765e98ed.json",
+					"name" : "multiple_ranges_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "options_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-options_test-Release-0f4653dd1433bdc48f69.json",
+					"name" : "options_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "output_test_helper::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-output_test_helper-Release-9ae6a29223e9ca89164d.json",
+					"name" : "output_test_helper",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "perf_counters_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-perf_counters_gtest-Release-80332e16219bc6df8415.json",
+					"name" : "perf_counters_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "perf_counters_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-perf_counters_test-Release-5dc4de79b059fe682dd8.json",
+					"name" : "perf_counters_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "register_benchmark_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-register_benchmark_test-Release-6a83faf704137569f1f4.json",
+					"name" : "register_benchmark_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "repetitions_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-repetitions_test-Release-9021fb89498b7e66c698.json",
+					"name" : "repetitions_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "report_aggregates_only_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-report_aggregates_only_test-Release-2666b3e25e507a42fef8.json",
+					"name" : "report_aggregates_only_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "reporter_output_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-reporter_output_test-Release-a45620f96d8903b18316.json",
+					"name" : "reporter_output_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "skip_with_error_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-skip_with_error_test-Release-7abf669a7c0ea9ea9168.json",
+					"name" : "skip_with_error_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "spec_arg_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-spec_arg_test-Release-79cfdf19a04a17d77138.json",
+					"name" : "spec_arg_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "spec_arg_verbosity_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-spec_arg_verbosity_test-Release-9e7d8ced38089238a435.json",
+					"name" : "spec_arg_verbosity_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "statistics_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-statistics_gtest-Release-a0f0a586fd27b01a7188.json",
+					"name" : "statistics_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "string_util_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-string_util_gtest-Release-a0395d63a655ad92f756.json",
+					"name" : "string_util_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "templated_fixture_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-templated_fixture_test-Release-80be9a1928175fc9357a.json",
+					"name" : "templated_fixture_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "time_unit_gtest::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-time_unit_gtest-Release-016ba6416c7319b528dc.json",
+					"name" : "time_unit_gtest",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "user_counters_tabular_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-user_counters_tabular_test-Release-9800508bd5e4dbee42dc.json",
+					"name" : "user_counters_tabular_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "user_counters_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-user_counters_test-Release-9afae9af2d35cbbc62c6.json",
+					"name" : "user_counters_test",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "user_counters_thousands_test::@cd313c557e836b3bc0d2",
+					"jsonFile" : "target-user_counters_thousands_test-Release-aa7ee11b5e22d2ae64d7.json",
+					"name" : "user_counters_thousands_test",
+					"projectIndex" : 7
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Andrey/Documents/GitHub/learning-algorithms/algorithms/release",
+		"source" : "C:/Users/Andrey/Documents/GitHub/learning-algorithms/algorithms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

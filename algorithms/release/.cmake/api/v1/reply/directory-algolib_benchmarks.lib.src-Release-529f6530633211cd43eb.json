@@ -1,0 +1,154 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"algolib_benchmarks/lib/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 124,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 128,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 132,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 166,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"algolib_benchmarks/lib/src/libbenchmark.a"
+			],
+			"targetId" : "benchmark::@c3c14c94846c39a34a51",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"algolib_benchmarks/lib/src/libbenchmark_main.a"
+			],
+			"targetId" : "benchmark_main::@c3c14c94846c39a34a51",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"algolib_benchmarks/lib/include/benchmark",
+				"release/algolib_benchmarks/lib/include/benchmark"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/benchmark",
+			"paths" : 
+			[
+				"release/algolib_benchmarks/lib/benchmarkConfig.cmake",
+				"release/algolib_benchmarks/lib/benchmarkConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"release/algolib_benchmarks/lib/benchmark.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/benchmark",
+			"exportName" : "benchmarkTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "benchmark::@c3c14c94846c39a34a51",
+					"index" : 6
+				},
+				{
+					"id" : "benchmark_main::@c3c14c94846c39a34a51",
+					"index" : 8
+				}
+			],
+			"paths" : 
+			[
+				"algolib_benchmarks/lib/src/CMakeFiles/Export/d56d27b88fbb159d81f220d5e4f5f598/benchmarkTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/doc/benchmark",
+			"paths" : 
+			[
+				{
+					"from" : "algolib_benchmarks/lib/docs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "algolib_benchmarks/lib/src",
+		"source" : "algolib_benchmarks/lib/src"
+	}
+}
