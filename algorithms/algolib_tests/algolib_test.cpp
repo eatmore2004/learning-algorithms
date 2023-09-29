@@ -5,6 +5,7 @@
 #include "warshall.h"
 #include "floyd.h"
 #include "reliable_shortest_paths.h"
+#include "expr_solver.h"
 #include <vector>
 
 TEST(rod_cutting, cut_rod) {
@@ -109,5 +110,11 @@ TEST(reliable_shortest_paths,solve){
     EXPECT_EQ(result, expected);
 }
 
-
+TEST(expr_solver,solve){
+    EXPECT_EQ(expr_solver::solve(std::vector<int>{2,1,1,0,3}), 12);
+    EXPECT_EQ(expr_solver::solve(std::vector<int>{2,10,1,0,3}), 63);
+    EXPECT_EQ(expr_solver::solve(std::vector<int>{10,20,30,50,0}), 300000);
+    EXPECT_EQ(expr_solver::solve(std::vector<int>{0,0,0,0,0}), 0);
+    EXPECT_EQ(expr_solver::solve(std::vector<int>{0,1,0,0,1,0}), 2);
+}
 

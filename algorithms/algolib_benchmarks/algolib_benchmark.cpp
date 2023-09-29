@@ -5,6 +5,7 @@
 #include "warshall.h"
 #include "floyd.h"
 #include "reliable_shortest_paths.h"
+#include "expr_solver.h"
 
 static void BM_Shortest_path(benchmark::State& state) {
 
@@ -92,6 +93,12 @@ static void BM_Reliable_shortest_paths(benchmark::State& state) {
     }
 }
 
+static void BM_Expression_solver(benchmark::State& state) {
+    for (auto _ : state) {
+        expr_solver::solve(std::vector<int>{2,1,1,0,3});
+    }
+}
+
 
 BENCHMARK(BM_Rod_cutting);
 BENCHMARK(BM_Shortest_path);
@@ -99,5 +106,6 @@ BENCHMARK(BM_Path_count);
 BENCHMARK(BM_Warshall);
 BENCHMARK(BM_Floyd);
 BENCHMARK(BM_Reliable_shortest_paths);
+BENCHMARK(BM_Expression_solver);
 
 BENCHMARK_MAIN();

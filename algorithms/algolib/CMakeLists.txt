@@ -11,6 +11,8 @@ set(SOURCE_FILES shortest_paths.cpp
         floyd.cpp
         floyd.h
         reliable_shortest_paths.cpp
-        reliable_shortest_paths.h)
+        reliable_shortest_paths.h
+        expr_solver.cpp
+        expr_solver.h)
 
 add_library(algolib_lib ${HEADER_FILES} ${SOURCE_FILES})
