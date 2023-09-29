@@ -4,6 +4,7 @@
 #include "path_count.h"
 #include "warshall.h"
 #include "floyd.h"
+#include "reliable_shortest_paths.h"
 #include <vector>
 
 TEST(rod_cutting, cut_rod) {
@@ -89,5 +90,24 @@ TEST(floyd,solve){
     };
     EXPECT_EQ(floyd::solve(matrix), result_matrix);
 }
+
+TEST(reliable_shortest_paths,solve){
+    std::vector<std::vector<reliable_shortest_paths::edge>> graph = {
+            {{4, 2}},
+            {{0, 1}, {2, 1}, {5, 3}, {4,4}, {3,15}},
+            {{5, 1}},
+            {},
+            {{3, 3}, {7,1}},
+            {{3, 5}, {6, 2}},
+            {{3, 2}},
+            {{3, 1}}
+    };
+
+    std::vector<int> result = reliable_shortest_paths::solve(1, 3, 4, graph);
+    std::vector<int> expected = {INF, 15, 7, 6, 5};
+
+    EXPECT_EQ(result, expected);
+}
+
 
 

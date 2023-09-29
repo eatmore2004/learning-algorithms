@@ -4,6 +4,7 @@
 #include "path_count.h"
 #include "warshall.h"
 #include "floyd.h"
+#include "reliable_shortest_paths.h"
 
 static void BM_Shortest_path(benchmark::State& state) {
 
@@ -19,9 +20,7 @@ static void BM_Shortest_path(benchmark::State& state) {
     };
 
     for (auto _ : state) {
-        for (int i = 0; i < 7; ++i) {
-            shortest_paths::find_shortest_path(1, i, graph);
-        }
+        shortest_paths::find_shortest_path(1, 3, graph);
     }
 }
 
@@ -77,11 +76,28 @@ static void BM_Floyd(benchmark::State& state) {
     }
 }
 
+static void BM_Reliable_shortest_paths(benchmark::State& state) {
+    std::vector<std::vector<reliable_shortest_paths::edge>> graph = {
+            {{4, 2}},
+            {{0, 1}, {2, 1}, {5, 3}, {4,4}, {3,15}},
+            {{5, 1}},
+            {},
+            {{3, 3}, {7,1}},
+            {{3, 5}, {6, 2}},
+            {{3, 2}},
+            {{3, 1}}
+    };
+    for (auto _ : state) {
+        reliable_shortest_paths::solve(1, 3, 4, graph);
+    }
+}
+
 
 BENCHMARK(BM_Rod_cutting);
 BENCHMARK(BM_Shortest_path);
 BENCHMARK(BM_Path_count);
 BENCHMARK(BM_Warshall);
 BENCHMARK(BM_Floyd);
+BENCHMARK(BM_Reliable_shortest_paths);
 
 BENCHMARK_MAIN();
