@@ -1,11 +1,13 @@
 #include "benchmark/benchmark.h"
-#include "shortest_paths.h"
-#include "rod_cutting.h"
-#include "path_count.h"
-#include "warshall.h"
-#include "floyd.h"
-#include "reliable_shortest_paths.h"
-#include "expr_solver.h"
+#include "dynamic_programming/shortest_paths.h"
+#include "dynamic_programming/rod_cutting.h"
+#include "dynamic_programming/path_count.h"
+#include "dynamic_programming/warshall.h"
+#include "dynamic_programming/floyd.h"
+#include "dynamic_programming/reliable_shortest_paths.h"
+#include "dynamic_programming/expr_solver.h"
+#include "dynamic_programming/matrix_chain_mult.h"
+#include "dynamic_programming/find_lcs.h"
 
 static void BM_Shortest_path(benchmark::State& state) {
 
@@ -100,6 +102,20 @@ static void BM_Expression_solver(benchmark::State& state) {
 }
 
 
+static void BM_Matrix_chain(benchmark::State& state) {
+    for (auto _ : state) {
+        matrix_chain_mult::get_mult_order(std::vector<int>{30,35,15,5,10,20,25});
+    }
+}
+
+static void BM_LCS(benchmark::State& state) {
+    for (auto _ : state) {
+        find_lcs::solve("ABCBDAB", "BDCABA");
+    }
+}
+
+
+
 BENCHMARK(BM_Rod_cutting);
 BENCHMARK(BM_Shortest_path);
 BENCHMARK(BM_Path_count);
@@ -107,5 +123,7 @@ BENCHMARK(BM_Warshall);
 BENCHMARK(BM_Floyd);
 BENCHMARK(BM_Reliable_shortest_paths);
 BENCHMARK(BM_Expression_solver);
+BENCHMARK(BM_Matrix_chain);
+BENCHMARK(BM_LCS);
 
 BENCHMARK_MAIN();

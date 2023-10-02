@@ -1,11 +1,13 @@
 #include "gtest/gtest.h"
-#include "shortest_paths.h"
-#include "rod_cutting.h"
-#include "path_count.h"
-#include "warshall.h"
-#include "floyd.h"
-#include "reliable_shortest_paths.h"
-#include "expr_solver.h"
+#include "dynamic_programming/shortest_paths.h"
+#include "dynamic_programming/rod_cutting.h"
+#include "dynamic_programming/path_count.h"
+#include "dynamic_programming/warshall.h"
+#include "dynamic_programming/floyd.h"
+#include "dynamic_programming/reliable_shortest_paths.h"
+#include "dynamic_programming/expr_solver.h"
+#include "dynamic_programming/matrix_chain_mult.h"
+#include "dynamic_programming/find_lcs.h"
 #include <vector>
 
 TEST(rod_cutting, cut_rod) {
@@ -116,5 +118,15 @@ TEST(expr_solver,solve){
     EXPECT_EQ(expr_solver::solve(std::vector<int>{10,20,30,50,0}), 300000);
     EXPECT_EQ(expr_solver::solve(std::vector<int>{0,0,0,0,0}), 0);
     EXPECT_EQ(expr_solver::solve(std::vector<int>{0,1,0,0,1,0}), 2);
+}
+
+TEST(matrix_chain_mult, solve){
+    std::vector<int> sizes = {30, 35, 15, 5, 10, 20, 25};
+    EXPECT_EQ(matrix_chain_mult::get_mult_order(sizes), "(( A1 ( A2  A3 ))(( A4  A5 ) A6 ))");
+}
+
+TEST(lcs_length, solve){
+    EXPECT_EQ(find_lcs::solve("ABCBDAB", "BDCABA"), "BCBA");
+    EXPECT_EQ(find_lcs::solve("ACGGAGTGCGCGGAAGCCGGCCGAA", "GTTCGGAATGCCGTTGCTCTGTAA"), "GTCGGAAGCCGGCCGAA");
 }
 

@@ -2,7 +2,6 @@
 // Created by Andrey on 9/27/2023.
 //
 
-#include <climits>
 #include "reliable_shortest_paths.h"
 
 namespace reliable_shortest_paths{
