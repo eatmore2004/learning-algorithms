@@ -8,6 +8,8 @@
 #include "dynamic_programming/expr_solver.h"
 #include "dynamic_programming/matrix_chain_mult.h"
 #include "dynamic_programming/find_lcs.h"
+#include "dynamic_programming/backpack.h"
+#include "dynamic_programming/optimal_bst.h"
 
 static void BM_Shortest_path(benchmark::State& state) {
 
@@ -114,6 +116,30 @@ static void BM_LCS(benchmark::State& state) {
     }
 }
 
+static void BM_OptimalBST(benchmark::State& state){
+    std::vector<double> p = {0, 0.15, 0.10, 0.05, 0.10, 0.20};
+    std::vector<double> q = {0.05, 0.10, 0.05, 0.05, 0.05, 0.10};
+    for (auto _ : state) {
+        optimal_bst::solve(p, q, 4);
+    }
+}
+
+static void BM_UnlimitedBackpack(benchmark::State& state) {
+    std::vector<int> weights = {1, 2, 3, 4, 6};
+    std::vector<int> prices = {1, 3, 4, 5, 100};
+    for (auto _ : state) {
+        backpack::unlimited_solve(5, 13, weights, prices);
+    }
+}
+
+static void BM_SimpleBackpack(benchmark::State& state) {
+    std::vector<int> weights = {3, 4, 5, 8, 9};
+    std::vector<int> prices = {1, 6, 4, 7, 6};
+    for (auto _ : state) {
+        backpack::simple_solve(5, 13, weights, prices);
+    }
+}
+
 
 
 BENCHMARK(BM_Rod_cutting);
@@ -125,5 +151,8 @@ BENCHMARK(BM_Reliable_shortest_paths);
 BENCHMARK(BM_Expression_solver);
 BENCHMARK(BM_Matrix_chain);
 BENCHMARK(BM_LCS);
+BENCHMARK(BM_OptimalBST);
+BENCHMARK(BM_UnlimitedBackpack);
+BENCHMARK(BM_SimpleBackpack);
 
 BENCHMARK_MAIN();

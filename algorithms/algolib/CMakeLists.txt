@@ -18,6 +18,12 @@ set(SOURCE_FILES dynamic_programming/shortest_paths.cpp
         dynamic_programming/matrix_chain_mult.h
         dynamic_programming/find_lcs.cpp
         dynamic_programming/find_lcs.h
+        dynamic_programming/optimal_bst.cpp
+        dynamic_programming/optimal_bst.h
+        dynamic_programming/optimal_bst.cpp
+        dynamic_programming/backpack.cpp
+        dynamic_programming/backpack.h
+        dynamic_programming/backpack.h
 )
 
 add_library(algolib_lib ${HEADER_FILES} ${SOURCE_FILES})

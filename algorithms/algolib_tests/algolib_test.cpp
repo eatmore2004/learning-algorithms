@@ -8,6 +8,8 @@
 #include "dynamic_programming/expr_solver.h"
 #include "dynamic_programming/matrix_chain_mult.h"
 #include "dynamic_programming/find_lcs.h"
+#include "dynamic_programming/optimal_bst.h"
+#include "dynamic_programming/backpack.h"
 #include <vector>
 
 TEST(rod_cutting, cut_rod) {
@@ -130,3 +132,25 @@ TEST(lcs_length, solve){
     EXPECT_EQ(find_lcs::solve("ACGGAGTGCGCGGAAGCCGGCCGAA", "GTTCGGAATGCCGTTGCTCTGTAA"), "GTCGGAAGCCGGCCGAA");
 }
 
+TEST(optimal_bst, solve){
+    std::vector<double> p = {0, 0.15, 0.10, 0.05, 0.10, 0.20};
+    std::vector<double> q = {0.05, 0.10, 0.05, 0.05, 0.05, 0.10};
+    EXPECT_EQ(optimal_bst::solve(p, q, 4), 1);
+}
+
+TEST(backpack_simple, solve){
+    std::vector<int> weights = {3, 4, 5, 8, 9};
+    std::vector<int> prices = {1, 6, 4, 7, 6};
+    EXPECT_EQ(backpack::simple_solve(5, 13, weights, prices), (std::vector<int>{4,2}));
+}
+
+TEST(backpack_unlimited, solve){
+    std::vector<int> weights = {1, 2, 3, 4, 6};
+    std::vector<int> prices = {1, 3, 4, 5, 100};
+    EXPECT_EQ(backpack::unlimited_solve(5, 13, weights, prices), (std::vector<int>{5,5,1}));
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
